@@ -1,0 +1,17 @@
+1. 外观字体设置
+appearance: File -> Setting -> Appearance & Behavior -> Appearance -> Size
+font: File -> Setting -> Editor -> Font
+
+2. 新建文件模板设置
+a. File -> Setting -> Editor -> File and Code Templates -> Files -> Python Script
+b. add folowing text
+# coding: utf-8
+import sys
+
+if __name__ == "__main__":
+    # print version
+    print(sys.version)
+    # user code
+
+3. 配置git管理
+VCS -> Enable Version Control Intelgration -> Git
