@@ -24,3 +24,17 @@
     a. 特别注意print，可当函数用，但是可以不用括号
         因此print "hello"与print("hello")作用相同
     b. abs-取绝对值，round-四舍五入
+
+1.9 模块
+    a. 导入函数，import和from ... import ...，区别如下
+        import: 导入模块，按照"模块.函数"使用
+        from ... import ...: 导入模块内的函数，按照"函数"使用
+        因此同时from math import *和from cmath import *会冲突，有同名函数
+    b. sqrt函数
+        math.sqrt仅能计算实数浮点，cmath.sqrt能同时计算实数和虚数开方
+    c. 虚数支持
+        python默认支持，无须使用import cmath导入
+    d. 函数引用
+        当使用import math之后，可以直接使用变量来引用函数，比如x = math.sqrt
+    e. 几个函数比较
+        round-四舍五入，floor-下舍，ceil-上入
