@@ -38,3 +38,7 @@
         当使用import math之后，可以直接使用变量来引用函数，比如x = math.sqrt
     e. 几个函数比较
         round-四舍五入，floor-下舍，ceil-上入
+
+1.10 运行程序
+    pycharm运行结束后会显示状态，但是如果直接点击，执行完毕后会推出，因此需要暂停
+    加入以下内容即可，raw_input("press <enter>")
