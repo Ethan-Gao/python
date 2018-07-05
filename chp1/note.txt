@@ -42,3 +42,23 @@
 1.10 运行程序
     pycharm运行结束后会显示状态，但是如果直接点击，执行完毕后会推出，因此需要暂停
     加入以下内容即可，raw_input("press <enter>")
+
+1.11 字符串
+    a. 强制转换: 同C语言，直接使用str可转换任意类型到字符型
+    b. 转义字符: 同C语言，直接使用\
+    c. 拼接字符串: 直接使用+连接两个字符串即可
+    d. str和repr区别
+        d1. str打印人易读格式，repr打印python格式(即跟命令行结果一样)
+        d2. ""可强制格式转换，作用同str，例如str(123)类型为字符型
+    e. 长字符串
+        使用三个单引号或者双引号, 使用\进行转义
+    f. 原始字符串: r
+        f1. 解决\转义字符引起的问题，例如"c:\nowhere"，由于\n构成换行
+        因此需要使用"c:\\nowhere"或者r"c:\nowhere"
+        f2. 特别注意，使用r时最后一个字符不能为\，否则需要拆分
+            print r"c:\nowhere", r"c:\nowhere\"会报错
+            print r"c:\nowhere", r"c:\nowhere\\"会打印\\
+            print r"c:\nowhere", r"c:\nowhere" + "\\"
+    g. unicode字符串: u
+        普通字符串以8位ascii存储，unicode以16为存储，主要用于语言
+        例如u"친구야안녕",u"こんにちは"
