@@ -62,3 +62,26 @@
     g. unicode字符串: u
         普通字符串以8位ascii存储，unicode以16为存储，主要用于语言
         例如u"친구야안녕",u"こんにちは"
+
+1.12 小结
+    本章所有函数功能如下
+    # 数据处理
+    取绝对值 - abs(number) - 输入正负数字型，返回数字型绝对值
+    四舍五入 - round(num[.ndigits]) - 根据精度ndigits对num进行四舍五入操作
+    上入下舍 - math.floor(number) - 下舍，返回浮点型
+              math.ceil(number) - 上入，返回浮点
+    平方根 - math.sqrt(number) - 输入正数字型开方(只能正数，负数报错)，返回平方根
+            cmath.sqrt(number) - 输入正负数字型(负数结果为复数)，返回平方根
+    幂 - pow(x, y[. z]) - 返回x的y次幂(所得结果对z取模)
+    # 类型转换
+    同C语言，直接进行强制转换，如下
+    float - 强制转换为浮点     int - 强制转换为整型
+    long - 强制转换为长整型     str - 强制转换为字符型
+    # 用户输入
+    input - 接收数字型输入，返回数字型
+    raw_input - 接收数字型、字符型输入，返回字符串
+    # 打印结果
+    str - 人类模式，适合人们查看的格式
+    repr - python格式，与python命令行结果相同
+    # 字符串处理
+    转义 - \      原始字符串 - r       unicode字符串 - u
