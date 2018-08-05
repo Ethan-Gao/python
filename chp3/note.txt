@@ -33,3 +33,31 @@
             空格 - 正数前加空格，负数则正好被-替代
             + - 无论正负数，都标识出符号
 
+3.4 字符串方法
+    a. 有用字符串常量
+        string.digits: 包含数字0-9的字符串
+        string.letters: 包含所有字母的字符串
+        string.lowercase: 包含所有小写字母的字符串
+        string.uppercase: 包含所有小写字母的字符串
+        string.printable: 包含所有可打印字符的字符串
+        string.punctuation: 包含所有标点的字符串
+    b. find
+        b1. 在一个较长字符串查找子串，类似C的strstr, 仅返回第一次查找的位置
+        b2. 限定范围时使用find(str, start, end)查找start-end范围内str位置
+        b3. 限定起点find(str, start)查找start-字符串末尾范围内str位置
+    c. join
+        用于向队列中添加元素，元素只能是字符串，一般效果类似连字符
+    d. lower
+        返回字符串的小写字母版
+    e. replace
+        替换字符串，类似txt查找替换
+    f. split
+       f1. 将字符串切割成序列，为join逆方法，仅支持字符串
+       f2. 若split()无任何分隔符，程序默认将空格当作分隔符
+    g. strip
+        去除字符串两边的空格
+    h. translate
+        h1. 替换字符串某些部分，仅处理指定的字符
+        h2. 一般需要先制作一个转换表，使用string库maketrans函数即可
+            maketrans接收两个参数，第一个表示源字符串，第二个表示需要替换成的字符串
+            例如maketrans("cs", "kz")表示所有c->k s->z
