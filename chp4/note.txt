@@ -23,3 +23,15 @@
     d. 字典最强大特点：键/key可为任何不可变类型，无论整型、字符型、浮点型等等都可以
     e. 字典的格式化字符串
         同其他%d、%f类似，不过%后面跟键值比如"%(key)s" % dict
+
+4.3 字典方法
+    a. clear - 清除字典所有项
+    b. copy - 浅复制
+        b1. 替换副本值，原始字典不受影响
+        b2. 直接修改副本(非替换，添加append或者删除remove)，原始字典也会改变
+        b3. 如果希望修改副本又不影响原始字典，则需要使用deepcopy库里面的copy函数
+    c. fromkeys - 用给定的key建立新字典
+        c1. 新字典有两种方式{}、dict，用法{}.fromkeys或者dict.fromkeys
+        c2. 不指定初始值，默认初始化为None
+        c3. 若不用None初始值，需要指定初始值，如dict.fromkeys(['name', 'age'], '(unknown)')
+    d. get - 访问字典某个键，不存在时:可提供返回值，不提供则返回None
